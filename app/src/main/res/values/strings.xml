@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ZZPCameraX1</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+
+    <string-array name="resolution_options">
+        <item>4:3</item>
+        <item>16:9</item>
+        <item>1:1</item>
+        <item>Full</item>
+    </string-array>
+
+    <string-array name="back_capture_resolution_values">
+        <item>4080x3060</item>
+        <item>4080x2296</item>
+        <item>3072x3072</item>
+        <item>4080x1842</item>
+    </string-array>
+
+    <string-array name="back_preview_resolution_values">
+        <item>1440x1080</item>
+        <item>1920x1080</item>
+        <item>1080x1080</item>
+        <item>2392x1080</item><!--TBD:can not set-->
+    </string-array>
+</resources>
