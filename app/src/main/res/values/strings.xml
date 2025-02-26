@@ -24,4 +24,21 @@
         <item>1080x1080</item>
         <item>2392x1080</item><!--TBD:can not set-->
     </string-array>
+
+    <string-array name="capture_mode_options">
+        <item>MAXIMIZE_QUALITY</item>
+        <item>MINIMIZE_LATENCY</item>
+        <item>ZSL</item>
+    </string-array>
+
+    <integer-array name="capture_mode_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+<!--    <string-array name="capture_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>-->
 </resources>

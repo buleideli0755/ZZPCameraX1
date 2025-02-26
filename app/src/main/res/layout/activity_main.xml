@@ -29,10 +29,11 @@
             />
 
         <Spinner
-            android:id="@+id/menu1"
+            android:id="@+id/captureMode"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:entries="@array/capture_mode_options"/>
 
         <Spinner
             android:id="@+id/menu2"
