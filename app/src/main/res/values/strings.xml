@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">ZZPCameraX1</string>
     <string name="take_photo">Take Photo</string>
-    <string name="start_capture">Start Capture</string>
-    <string name="stop_capture">Stop Capture</string>
+    <string name="start_record">Start Record</string>
+    <string name="stop_capture">Stop Record</string>
+    <string name="pause_record">Pause record</string>
+    <string name="resume_record">Resume record</string>
+    <string name="resume_record_default_text">0s</string>
 
     <string-array name="resolution_options">
         <item>4:3</item>
@@ -12,17 +15,24 @@
     </string-array>
 
     <string-array name="back_capture_resolution_values">
-        <item>4080x3060</item>
-        <item>4080x2296</item>
-        <item>3072x3072</item>
-        <item>4080x1842</item>
+        <item>4096x3072</item><!--4:3,pass-->
+        <item>4096x2304</item><!--16:9,fail-->
+        <item>3072x3072</item><!--1:1,fail-->
+        <item>4096x1808</item><!--Full,pass-->
+    </string-array>
+
+    <string-array name="back_video_resolution_values">
+        <item>1920x1080</item><!--TBD,not used-->
+        <item>2560x1440</item>
+        <item>1440x1440</item>
+        <item>1156x2560</item>
     </string-array>
 
     <string-array name="back_preview_resolution_values">
-        <item>1440x1080</item>
-        <item>1920x1080</item>
-        <item>1080x1080</item>
-        <item>2392x1080</item><!--TBD:can not set-->
+        <item>1440x1080</item><!--4:3,pass-->
+        <item>1920x1080</item><!--16:9,pass-->
+        <item>1080x1080</item><!--1:1,pass-->
+        <item>2436x1080</item><!--Full,fail--><!--TBD:can not set-->
     </string-array>
 
     <string-array name="capture_mode_options">
