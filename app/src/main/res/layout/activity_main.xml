@@ -17,8 +17,10 @@
     <LinearLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@color/white"
+        android:alpha="0.5"
         app:layout_constraintTop_toTopOf="parent">
 
         <Spinner
@@ -43,6 +45,14 @@
             android:layout_weight="1"/>
     </LinearLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/module_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        android:background="?attr/colorButtonNormal"
+        android:alpha="0.5"/>
+
     <TextView
         android:id="@+id/record_time"
         android:layout_width="wrap_content"
@@ -50,7 +60,7 @@
         android:textColor="@color/white"
         android:background="@color/black"
         android:visibility="invisible"
-        android:text="@+id/resume_record_default_text"
+        android:text="@string/resume_record_default_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

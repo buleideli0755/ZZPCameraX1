@@ -4,8 +4,11 @@
     <string name="start_record">Start Record</string>
     <string name="stop_capture">Stop Record</string>
     <string name="pause_record">Pause record</string>
-    <string name="resume_record">Resume record</string>
     <string name="resume_record_default_text">0s</string>
+    <string name="resume_record">Resume record</string>
+    <string name="module_normal">NORMAL</string>
+    <string name="module_slowmotion">SLOWMOTION</string>
+    <string name="module_hyperlapse">HYPERLAPSE</string>
 
     <string-array name="resolution_options">
         <item>4:3</item>
@@ -16,23 +19,29 @@
 
     <string-array name="back_capture_resolution_values">
         <item>4096x3072</item><!--4:3,pass-->
-        <item>4096x2304</item><!--16:9,fail-->
-        <item>3072x3072</item><!--1:1,fail-->
+        <item>4096x2304</item><!--16:9,fail,TBD-->
+        <item>3072x3072</item><!--1:1,fail,TBD-->
         <item>4096x1808</item><!--Full,pass-->
     </string-array>
 
     <string-array name="back_video_resolution_values">
-        <item>1920x1080</item><!--TBD,not used-->
-        <item>2560x1440</item>
-        <item>1440x1440</item>
-        <item>1156x2560</item>
+        <item>1920x1080</item><!--4:3,temp size,TBD-->
+        <item>2560x1440</item><!--16:9,pass-->
+        <item>1440x1440</item><!--1:1,fail,TBD-->
+        <item>1156x2560</item><!--Full,fail,TBD-->
     </string-array>
+
+    <!--slow motion resolution-->
+    <!--4:3,pass-->
+    <!--16:9,pass-->
+    <!--1:1,fail,TBD-->
+    <!--Full,fail,TBD-->
 
     <string-array name="back_preview_resolution_values">
         <item>1440x1080</item><!--4:3,pass-->
         <item>1920x1080</item><!--16:9,pass-->
         <item>1080x1080</item><!--1:1,pass-->
-        <item>2436x1080</item><!--Full,fail--><!--TBD:can not set-->
+        <item>2436x1080</item><!--Full,fail,TBD:can not set-->
     </string-array>
 
     <string-array name="capture_mode_options">
@@ -46,9 +55,10 @@
         <item>1</item>
         <item>2</item>
     </integer-array>
-<!--    <string-array name="capture_type_value">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>-->
+
+    <string-array name="module_tab_arrays">
+        <item>@string/module_normal</item>
+        <item>@string/module_slowmotion</item>
+        <item>@string/module_hyperlapse</item>
+    </string-array>
 </resources>
