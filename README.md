@@ -6,7 +6,7 @@ Implement the following camera feature via android cameraX API.
 
 3,support capture mode select;
 
-4,support lock af;
+4,support lock af/ae;
 
 5,support video record;
 
